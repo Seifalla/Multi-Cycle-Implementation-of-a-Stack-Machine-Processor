@@ -3,6 +3,7 @@
 Abstract—This project required students to create a multicycle processor that implements the Stacking In Kentucky (SIK) 
 Instruction Set. SIK is logically complete, but lacks any floating point operations and, as a 
 stack machine, has some efficiency drawbacks.
+
 I.INTRODUCTION
 
 The slowest, but most fundamental processor to design is a multicycle machine. 
@@ -10,6 +11,7 @@ This machine executes instructions in a variable number of clock cycles. The gro
 in verilog for the Stacking In Kentucky (SIK) instruction set. SIK is a fairly generic stack instruction set that 
 allows a wide variety of applications. The processor has 16-bit instructions, 256 16-bit stack registers, and assumes
 64KB of memory.
+
 II. INSTRUCTION ENCODING
 
 The team initialized memory using “$readmemh0()” to load programs onto the processor. Instructions were encoded using
@@ -19,6 +21,7 @@ immediate field to determine which operation is being executed on the stack vari
 Some instructions require a 16-bit immediate field. For these instructions, the assembler encodes a “pre” instruction 
 with the top 4 bits. The processor places these in a special 4- bit register and uses the register on the next instruction 
 that requires a “pre” value.
+
 III. IMPLEMENTATION
 
 The group implemented the processor in a single module. While this is not always advisable, the nature of the 
@@ -31,6 +34,7 @@ the IR or incrementing the PC and beginning the operation. A “magic” registe
 effective.
 The operations the processor supports are all parts of “case” statements with the state/opcode as the switch variable. 
 Each operation executes as directed in the SIK instruction specification.
+
 IV. TESTING AND VERIFICATION
 
 Our testing procedure mainly relied on the idea of halting the program early if it failed the test. 
