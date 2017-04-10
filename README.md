@@ -1,7 +1,7 @@
 # Multi-Cycle-Implementation-of-a-Stack-Machine-Processor
 
-Abstract—This project required students to create a multicycle processor the implement the Stacking In Kentucky (SIK) 
-Instruction Set they were provided. SIK is logically complete, but lacks any floating point operations and, as a 
+Abstract—This project required students to create a multicycle processor that implements the Stacking In Kentucky (SIK) 
+Instruction Set. SIK is logically complete, but lacks any floating point operations and, as a 
 stack machine, has some efficiency drawbacks.
 I.INTRODUCTION
 The slowest, but most fundamental processor to design is a multicycle machine. 
